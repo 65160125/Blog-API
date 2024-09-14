@@ -1,0 +1,11 @@
+<%- include("partials/header.ejs") %>
+<%- include("partials/post-form.ejs") %>
+<% posts.forEach(post =>{ %>
+
+    <%- include("partials/post-share.ejs", {post: post}) %>
+
+    <%}) %>
+
+
+
+<%- include("partials/footer.ejs") %>
